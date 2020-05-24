@@ -18,7 +18,7 @@ export class SendService {
         from: 'test@globaltracker.nhely.hu', // Senders email address
         subject: 'Testing Nest MailerModule ✔', // Subject line
        // text: '<p>Confirm link: '+this.confirmService.createHashUrl('fodorbalazs98@gmail.com')+'<p>', // plaintext body
-        html: '<p>Confirm link: '+this.confirmService.createHashUrl('fodorbalazs98@gmail.com')+'<p>', // HTML body content
+        html: '<p>Confirm link: '+this.confirmService.createHashUrl()+'<p>', // HTML body content
       })
       .then((success) => {
         console.log(success)
